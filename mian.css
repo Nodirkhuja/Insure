@@ -1,0 +1,369 @@
+/* fonts */
+@font-face {
+  font-family: "DM Serif Display";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/dmserifdisplayregular.woff2") format("woff2"), 
+  url("./fonts/dmserifdisplayregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap; 
+  src: url("./fonts/karlaregular.woff2") format("woff2"),
+  url("./fonts/karlaregular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Karla";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap; 
+  src: url("./fonts/karla700.woff2") format("woff2"),
+  url("./fonts/karla700.woff") format("woff");
+}
+
+
+/* general styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", "Arial", sans-serif;
+  font-weight: 700;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 1180px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 35px;
+  padding-left: 35px;
+}
+
+.btn {
+  font-size: 13px;
+  line-height: 15px;
+  color: #2C2830;
+  padding: 13px 28px;
+  border: 1.5px solid #2C2830;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #2C2830;
+}
+
+/* header styles started */
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header-right-wrap{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-item {
+  margin-right: 25px;
+}
+
+.nav-item:nth-child(3) {
+  margin-right: 33px;
+}
+
+.nav-link {
+  font-size: 13px;
+  line-height: 15px;
+  color: #837D88;
+}
+
+.nav-link:hover {
+  color: #2C2830;
+}
+
+/* hero styles started */
+
+.hero {
+  position: relative;
+  padding: 105px 0 127px;
+  background-color: #2D2641;
+  background-image: url("./images/herorows.svg");
+  background-size: 697px 649px;
+  background-position: calc(50% + 630px) calc(50% - 105px);
+  background-repeat: no-repeat;
+}
+
+.hero::after {
+  position: absolute;
+  top: calc(50% + 100px);
+  left: calc(50% - 1235px);
+  z-index: 2;
+  background-image: url("./images/herorows.svg");
+  background-size: 697px 649px;
+  background-repeat: no-repeat;
+  width: 697px;
+  height: 649px;
+  content: "";
+}
+
+.hero-wrap {
+  position: relative;
+  display: flex;
+  
+}
+.hero-text-wrap {
+  width: 540px;
+}
+
+.hero-tittle {
+  margin-top: 0;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 64px;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.hero-tittle::before {
+  display: block;
+  width: 150px;
+  height: 1px;
+  margin-bottom: 63px;
+  background-color: #fff;
+  content: "";
+}
+
+.hero-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.hero-btn {
+  display: inline-block;
+  color: #fff;
+  background-color: transparent;
+  border-color: #fff;
+}
+
+.hero-btn:hover {
+  color: #2C2830;
+  background-color: #fff;
+}
+
+.hero-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/* difference section styles started */
+
+.difference {
+  padding-top: 305px;
+  padding-bottom: 158px;
+}
+
+
+.difference-tittle {
+  margin-top: 0;
+  margin-bottom: 96px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 64px;
+  letter-spacing: -1px;
+  color: #2C2830;
+}
+.difference-tittle::before {
+  display: block;
+  width: 150px;
+  height: 1px;
+  background-color: #C396C6;
+  margin-bottom: 63px;
+  content: "";
+}
+.difference-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.difference-item {
+  width: 350px;
+}
+
+.difference-item-tittle {
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 38px;
+  letter-spacing: -0.388889px;
+  color: #2C2830;
+  margin: 0;
+}
+
+.difference-item-tittle::before {
+  display: block;
+  width: 86px;
+  height: 86px;
+  background-image: url("./images/lightningicon.svg");
+  margin-bottom: 32px;
+  content: "";
+}
+
+.difference-item-desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #837D88;
+  margin: 0;
+}
+
+
+/* article styles started */
+
+.article {
+  padding-bottom: 150px;
+  /* background-size: 1110px 250px; */
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+}
+
+.article-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 69px 80px 69px 81px;
+  background-image: url("./images/article-bg.png");
+}
+
+.article-tittle-wrap {
+  width: 475px;
+}
+
+.article-tittle {
+  margin: 0;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -0.777778px;
+  color: #fff;
+}
+
+.article-btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.article-btn:hover{
+  color: #2C2830;
+  background-color: #fff;
+}
+
+
+/* footer styles started */
+
+
+.footer {
+  background-color: #fafafa;
+}
+
+.footer-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 67px;
+  padding-bottom: 36px;
+  border-bottom: 1px solid #dadada;
+}
+
+.footer-snetwork-list {
+  display: flex;
+  align-items: center;
+}
+.footer-snetwork-item {
+  margin-right: 16px;
+}
+
+.footer-snetwork-item:last-child {
+  margin-right: 0;
+}
+
+.footer-snetwork-link {
+  color: #837D88;
+}
+
+.footer-snetwork-link:hover {
+  color: #2C2830;
+}
+
+.footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-bottom-menu-wrap {
+  width: 255px;
+}
+
+.footer-bottom-menu-tittle {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #837D88;
+  padding-top: 48px;
+  padding-bottom: 36px;
+  margin: 0;
+}
+
+.footer-bottom-item {
+  padding-bottom: 16px;
+}
+
+.footer-bottom-link {
+  font-size: 13px;
+  line-height: 15px;
+  letter-spacing: 1.5px;
+  color: #2D2641;
+}
+
+.footer-bottom-link:hover {
+  border-bottom: 1px solid #2d2641;
+}
